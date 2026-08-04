@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "titulo": "El Tunco",
+        "departamento": "La Libertad",
+        "categoria": "Playas",
+        "precio": "$0.00 (Acceso libre)",
+        "descripcion": "Famosa playa ideal para el surf, con amplia oferta gastronómica y vibrante vida nocturna.",
+        "imagen": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+    },
+    {
+        "id": 2,
+        "titulo": "Volcán de Santa Ana (Ilamatepec)",
+        "departamento": "Santa Ana",
+        "categoria": "Montañas y Volcanes",
+        "precio": "$3.00 (Extranjeros $6.00) + Guía $3.00",
+        "descripcion": "El volcán más alto de El Salvador con una impresionante laguna turquesa de azufre en su cráter.",
+        "imagen": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+    },
+    {
+        "id": 3,
+        "titulo": "Lago de Coatepeque",
+        "departamento": "Santa Ana",
+        "categoria": "Lagos y Lagunas",
+        "precio": "$0.00 (Restaurantes y miradores con consumo)",
+        "descripcion": "Hermoso lago de origen volcánico rodeado de restaurantes y actividades acuáticas.",
+        "imagen": "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+    },
+    {
+        "id": 4,
+        "titulo": "Ruta de las Flores (Suchitoto / Ataco)",
+        "departamento": "Ahuachapán",
+        "categoria": "Pueblos y Cultura",
+        "precio": "$0.00 (Recorrido libre)",
+        "descripcion": "Ruta artesanal colonial caracterizada por su gastronomía, clima fresco y festivales de fin de semana.",
+        "imagen": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86"
+    }
+]
