@@ -33,9 +33,9 @@ El objetivo principal de esta aplicación es demostrar el mapa y ciclo de vida d
 
 ```mermaid
 graph TD
-    A["Usuario / Navegador"] -->|1. Petición HTTP GET /sitios| B["Rutas: web.php"]
-    B -->|2. Delega al método index()| C["Controller: SitioController.php"]
-    C -->|3. Lee archivo| D[("Capa de Datos: lugares.json")]
-    D -->|4. Retorna arreglo de datos| C
-    C -->|5. Envía datos a la vista| E["Vista: Blade Templates"]
-    E -->|6. Renderiza HTML final| A
+    A["Usuario / Navegador"] -->|"1. Petición HTTP GET /sitios"| B["Rutas: web.php"]
+    B -->|"2. Delega al método index"| C["Controller: SitioController.php"]
+    C -->|"3. Lee archivo"| D[("Capa de Datos: lugares.json")]
+    D -->|"4. Retorna arreglo de datos"| C
+    C -->|"5. Envía datos a la vista"| E["Vista: Blade Templates"]
+    E -->|"6. Renderiza HTML final"| A
