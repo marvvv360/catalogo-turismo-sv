@@ -31,36 +31,12 @@ El objetivo principal de esta aplicación es demostrar el mapa y ciclo de vida d
 
 #### Descripción del Flujo MVC Implementado
 
-+----------------------------------+
-               |       Usuario / Navegador        |
-               +----------------------------------+
-                                |
-                   (1) Petición HTTP GET /sitios
-                                v
-               +----------------------------------+
-               |        Rutas (web.php)           |
-               +----------------------------------+
-                                |
-                   (2) Delega al método index()
-                                v
-               +----------------------------------+
-               | Controller (SitioController.php) |
-               +----------------------------------+
-                     |                      ^
-  (3) Lee lugares.json                      | (4) Retorna arreglo
-                     v                      |     de datos
-               +----------------------------------+
-               |  Capa de Datos (lugares.json)    |
-               +----------------------------------+
-                                |
-               (5) Envía datos procesados a la vista
-                                v
-               +----------------------------------+
-               |    Vista (Blade Templates)       |
-               +----------------------------------+
-                                |
-                   (6) Renderiza respuesta HTML
-                                v
-               +----------------------------------+
-               |       Usuario / Navegador        |
-               +----------------------------------+
+```mermaid
+graph TD
+    A[Usuario / Navegador] -->|(1) Petición HTTP GET /sitios| B[Rutas: web.php]
+    B -->|(2) Delega al método index()| C[Controller: SitioController.php]
+    C -->|(3) Lee archivo| D[(Capa de Datos: lugares.json)]
+    D -->|(4) Retorna arreglo de datos| C
+    C -->|(5) Envía datos a la vista| E[Vista: Blade Templates]
+    E -->|(6) Renderiza HTML final| A
+```
